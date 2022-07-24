@@ -1,0 +1,55 @@
+body{
+  background: radial-gradient(ellipse at center, #eeeeee 0%, #cccccc 100%);
+}
+.box{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 15vh auto;
+}
+.ring{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #014300 0%, #79e969 50%, #014300 100%);
+  border-radius: 50%;
+}
+.ring .inner{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: #4cd83c;
+  border-radius: 50%;
+}
+.ring .circle{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  background: linear-gradient(to right, #018201 0%, #79e969 50%, #018201 100%);
+  border-radius: 50%;
+}
+.ring .circle .inner{
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+}
+.ring .circle:before, .ring .circle:after{
+  content: "";
+  position: absolute;
+  top: -12%;
+  left: 0%;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to right, #018201 0%, #79e969 50%, #018201 100%);
+}
+.ring .circle:after{
+  top: initial;
+  bottom: -12%;
+}
